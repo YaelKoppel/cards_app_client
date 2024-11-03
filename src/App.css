@@ -1,11 +1,14 @@
 .App {
   text-align: center;
-  display: grid;
-  gap: 16px;
-  padding: 16px;
 
 }
-
+.cards{
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust 200px to desired card width */
+  gap: 5px;
+  padding: 5px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

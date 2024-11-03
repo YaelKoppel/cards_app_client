@@ -62,6 +62,7 @@ function App() {
 
   return (
     <div className="App">
+      <div className="cards">
       {cards.map((card) => (
         <Card
           key={card.id}
@@ -71,6 +72,7 @@ function App() {
           updateCardColor={updateCardColor}
         />
       ))}
+      </div>
       <button onClick={addCard} className="add-button">
         <i className="fa fa-plus" aria-hidden="true"></i>
       </button>
